@@ -17,7 +17,8 @@ return new class extends Migration
             $table->string('email')->unique()->nullable();
             $table->string('phone')->unique();
             $table->string('role')->nullable();
-            $table->foreignId('city_id')->constrained()->cascadeOnDelete();
+            $table->text('address')->nullable();
+            // $table->foreignId('city_id')->constrained()->cascadeOnDelete();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();

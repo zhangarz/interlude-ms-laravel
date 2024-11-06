@@ -190,12 +190,13 @@ return [
     */
 
     'attributes' => [
-        'phone'=>'الرقم',
-        'name'=>'الاسم',
-        'email'=>'الايميل',
-        'password'=>'كلمة المرور',
-        'city_id'=>'المدينة',
-        
+        'phone'=>'phone',
+        'name'=>'name',
+        'email'=>'email',
+        'password'=>'password',
+        'city_id'=>'city',
+        'property_id'          =>'Property',
+        'value'               =>'Value'
     ],
 
 

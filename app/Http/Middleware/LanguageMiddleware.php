@@ -16,6 +16,7 @@ class LanguageMiddleware
     public function handle(Request $request, Closure $next): Response
     {
         $langs = ['ar', 'en', 'ku'];
+        
         $local = $request->header('Accept-Language');
         $localization = in_array($local, $langs, true) ? $local : 'en';
         app()->setLocale($localization);

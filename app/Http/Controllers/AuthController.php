@@ -34,6 +34,12 @@ class AuthController extends Controller
 
     }
 
+    public function authUser()
+    {
+        $user = auth()->user();
+        return $this->returnData($user,true,200);
+    }
+
     public function logout(Request $request)
     {
         $request->user()->token()->revoke();

@@ -174,7 +174,8 @@ return [
         'email'=>'email',
         'password'=>'şîfre',
         'city_id'=>'bajar',
-
+      'property_id'          =>'mal',
+        'value'               =>'giranî'
     ],
 
 ];
