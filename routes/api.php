@@ -3,6 +3,7 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\Dashboard\PropertyController;
 use App\Http\Controllers\Dashboard\PropertyValuesContoller;
+use App\Http\Controllers\Dashboard\ShopController;
 use App\Http\Controllers\Dashboard\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -21,6 +22,7 @@ Route::group(['middleware'=>'lang'],function(){
         Route::apiResource('/properties',PropertyController::class);
         Route::apiResource('/property_values',PropertyValuesContoller::class);
         Route::apiResource('/users',UserController::class);
+        Route::apiResource('/shops',ShopController::class);
 
     });
     

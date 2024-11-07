@@ -175,7 +175,19 @@ return [
         'password'=>'şîfre',
         'city_id'=>'bajar',
       'property_id'          =>'mal',
-        'value'               =>'giranî'
+        'value'               =>'giranî',
+        'name_ar'             =>'navê erebî',
+        'name_en'             =>'navê îngilîzî',
+        'name_ku'             =>'navê kurdî',
+        'desc_ar'             =>'ravekirina erebî',
+        'desc_en'             =>'ravekirina îngilîzî',
+        'desc_ku'             =>'ravekirina kurdî',
+        'logo'               =>'logo',
+        'address'            =>'navnîşan',
+        'user_id'           =>'bikaranîvan',
+        'address_ar'        =>'navnîşan erebî',
+        'address_en'        =>'navnîşan îngilîzî',
+        'address_ku'        =>'navnîşan kurdî',
     ],
 
 ];

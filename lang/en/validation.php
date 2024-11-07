@@ -196,7 +196,19 @@ return [
         'password'=>'password',
         'city_id'=>'city',
         'property_id'          =>'Property',
-        'value'               =>'Value'
+        'value'               =>'Value',
+        'name_ar'             =>'Name Ar',
+        'name_en'             =>'Name En',
+        'name_ku'             =>'Name Ku',
+        'desc_ar'             =>'Descrption Ar',
+        'desc_en'             =>'Descrption En',
+        'desc_ku'             =>'Descrption Ku',
+        'logo'               =>'Logo',
+        'address'            =>'Address',
+        'user_id'           =>'User',
+        'address_ar'        =>'Address Ar',
+        'address_en'        =>'Address En',
+        'address_ku'        =>'Address Ku',
     ],
 
 

@@ -18,7 +18,9 @@ return new class extends Migration
             $table->string('name_ku');
            
             $table->foreignId('user_id')->on('users')->cascadeOnDelete()->cascadeOnUpdate()->nullable();
-            $table->text('descrption')->nullable();
+            $table->text('desc_ar')->nullable();
+            $table->text('desc_en')->nullable();
+            $table->text('desc_ku')->nullable();
             $table->text('address')->nullable();
             $table->string('logo')->nullable();
 
