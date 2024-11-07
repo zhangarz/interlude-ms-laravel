@@ -31,12 +31,13 @@ class ShopController extends Controller
 
     public function update(ShopRequest $request,$id,ShopService $service)
     {
-      $row =  $service->handle($request->validated(),$id);
-      if(is_string($row))
-      {
-        return $this->throwException($row);
-      }
-      return $this->returnSuccess(__('messages.update_success'),200);
+        return 'rahma';
+    //   $row =  $service->handle($request->validated(),$id);
+    //   if(is_string($row))
+    //   {
+    //     return $this->throwException($row);
+    //   }
+    //   return $this->returnSuccess(__('messages.update_success'),200);
     }
 
     public function destroy($id)

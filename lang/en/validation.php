@@ -209,6 +209,7 @@ return [
         'address_ar'        =>'Address Ar',
         'address_en'        =>'Address En',
         'address_ku'        =>'Address Ku',
+        'shop_id'           =>'Shop'
     ],
 
 

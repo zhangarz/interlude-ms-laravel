@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\Dashboard\BrandController;
+use App\Http\Controllers\Dashboard\CategoryController;
 use App\Http\Controllers\Dashboard\PropertyController;
 use App\Http\Controllers\Dashboard\PropertyValuesContoller;
 use App\Http\Controllers\Dashboard\ShopController;
@@ -23,6 +25,9 @@ Route::group(['middleware'=>'lang'],function(){
         Route::apiResource('/property_values',PropertyValuesContoller::class);
         Route::apiResource('/users',UserController::class);
         Route::apiResource('/shops',ShopController::class);
+        Route::apiResource('/categories',CategoryController::class);
+        Route::apiResource('/brands',BrandController::class);
+
 
     });
     

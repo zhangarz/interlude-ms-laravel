@@ -16,14 +16,14 @@ return new class extends Migration
             $table->string('name_ar');
             $table->string('name_en');
             $table->string('name_ku');
-           
             $table->foreignId('user_id')->on('users')->cascadeOnDelete()->cascadeOnUpdate()->nullable();
             $table->text('desc_ar')->nullable();
             $table->text('desc_en')->nullable();
             $table->text('desc_ku')->nullable();
-            $table->text('address')->nullable();
+            $table->text('address_ar')->nullable();
+            $table->text('address_en')->nullable();
+            $table->text('address_ku')->nullable();
             $table->string('logo')->nullable();
-
             $table->timestamps();
         });
     }
