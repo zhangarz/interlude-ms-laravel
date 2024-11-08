@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('desc_ku');
             $table->foreignId('shop_id')->on('shops')->cascadeOnDelete()->cascadeOnUpdate()->nullable();
             $table->foreignId('category_id')->on('categories')->cascadeOnDelete()->cascadeOnUpdate()->nullable();
-            $table->foreignId('brand')->on('categories')->nullable();
+            $table->foreignId('barnd_id')->on('brands')->nullable();
             $table->string('price');
 
             $table->timestamps();

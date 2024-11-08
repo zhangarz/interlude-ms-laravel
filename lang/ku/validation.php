@@ -188,7 +188,9 @@ return [
         'address_ar'        =>'navnîşan erebî',
         'address_en'        =>'navnîşan îngilîzî',
         'address_ku'        =>'navnîşan kurdî',
-        'shop_id'           =>'dikan'
+        'shop_id'           =>'dikan',
+           'file'             =>'fîl',
+        'files'             =>'Ne wisa ye'
     ],
 
 ];

@@ -209,7 +209,9 @@ return [
         'address_ar'        =>'Address Ar',
         'address_en'        =>'Address En',
         'address_ku'        =>'Address Ku',
-        'shop_id'           =>'Shop'
+        'shop_id'           =>'Shop',
+          'file'             =>'File',
+        'files'             =>'Files'
     ],
 
 

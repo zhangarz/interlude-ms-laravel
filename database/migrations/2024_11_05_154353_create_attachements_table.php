@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('attachements', function (Blueprint $table) {
             $table->id();
-            $table->string('url');
+            $table->string('name');
             $table->string('type');
             $table->foreignId('item_id')->on('items')->cascadeOnDelete()->cascadeOnUpdate()->nullable();
             $table->timestamps();

@@ -3,23 +3,24 @@
 namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\ShopRequest;
-use App\Http\Services\ShopService;
-use App\Models\Shop;
+use App\Http\Requests\ItemRequest;
+use App\Http\Services\ItemService;
+use App\Models\Item;
 use App\Traits\ResponseTrait;
 use Illuminate\Http\Request;
 
-class ShopController extends Controller
+class ItemController extends Controller
 {
     use ResponseTrait;
 
     public function index()
     {
-      $data = Shop::with('user')->paginate();
-      return $this->returnData($data,true,200);
+        $data = Item::with(['shop','category','files','brand'])->paginate();
+        return $this->returnData($data,true,200);
     }
 
-    public function store(ShopRequest $request,ShopService $service)
+
+    public function store(ItemRequest $request,ItemService $service)
     {
       $row =  $service->handle($request->validated());
       if(is_string($row))
@@ -29,7 +30,7 @@ class ShopController extends Controller
       return $this->returnSuccess(__('messages.create_success'),200);
     }
 
-    public function update(ShopRequest $request,$id,ShopService $service)
+    public function update(ItemRequest $request,$id,ItemService $service)
     {
       $row =  $service->handle($request->validated(),$id);
       if(is_string($row))
@@ -41,9 +42,8 @@ class ShopController extends Controller
 
     public function destroy($id)
     {
-        $row =Shop::findOrFail($id);
+        $row =Item::findOrFail($id);
         $row->delete();
         return $this->returnSuccess(__('messages.delete_success'),200);
     }
 }
-
