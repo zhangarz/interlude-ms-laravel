@@ -24,6 +24,10 @@ class Item extends Model
         return $this->belongsTo(Brand::class);
     }
 
+    public function properties()
+    {
+        return $this->belongsToMany(Property::class,'item_properties');
+    }
     public function files()
     {
         return $this->hasMany(Attachement::class);

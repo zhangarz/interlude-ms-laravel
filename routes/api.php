@@ -4,6 +4,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\Dashboard\BrandController;
 use App\Http\Controllers\Dashboard\CategoryController;
 use App\Http\Controllers\Dashboard\ItemController;
+use App\Http\Controllers\Dashboard\ItemPropertiesController;
 use App\Http\Controllers\Dashboard\PropertyController;
 use App\Http\Controllers\Dashboard\PropertyValuesContoller;
 use App\Http\Controllers\Dashboard\ShopController;
@@ -31,6 +32,8 @@ Route::group(['middleware'=>'lang'],function(){
         Route::apiResource('/brands',BrandController::class);
         Route::apiResource('/items',ItemController::class)->except('update');
         Route::post('/items/{id}',[ItemController::class,'update']);
+        Route::post('/properties/items',[ItemPropertiesController::class,'store']);
+        Route::post('/properties/items/{id}',[ItemPropertiesController::class,'update']);
 
 
     });

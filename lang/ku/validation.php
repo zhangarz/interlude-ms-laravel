@@ -190,7 +190,9 @@ return [
         'address_ku'        =>'navnîşan kurdî',
         'shop_id'           =>'dikan',
            'file'             =>'fîl',
-        'files'             =>'Ne wisa ye'
+        'files'             =>'Ne wisa ye',
+        'item_id'           =>'şanî'
+
     ],
 
 ];

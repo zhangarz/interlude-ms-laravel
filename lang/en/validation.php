@@ -211,7 +211,9 @@ return [
         'address_ku'        =>'Address Ku',
         'shop_id'           =>'Shop',
           'file'             =>'File',
-        'files'             =>'Files'
+        'files'             =>'Files',
+        'item_id'           =>'Item'
+
     ],
 
 
